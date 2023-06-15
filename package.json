@@ -1,0 +1,23 @@
+{
+  "name": "lesson-10",
+  "version": "1.0.0",
+  "description": "",
+  "source": "index.html",
+  "scripts": {
+    "start": "parcel",
+    "build": "parcel build",
+    "push-gh-pages": "push-dir --dir=dist --branch=gh-pages --cleanup --verbose"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@parcel/transformer-sass": "^2.5.0",
+    "parcel": "^2.5.0"
+  },
+  "dependencies": {
+    "browserslist": "^4.21.5"
+  },
+  "browserslist": [
+    "defaults"
+  ]
+}

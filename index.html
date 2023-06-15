@@ -1,0 +1,178 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+     <link rel="stylesheet" href="/scss/main.css">
+    <title>LOREMIPSUM</title>
+</head>
+<body>
+
+<div class="banner">
+    <section class="header">
+        <div class="wrapper">
+            <h3 class="header-logo">LOREMIPSUM.<span class="header-logo__color">NET</span></h3>
+            <nav class="header-nav">
+                <ul class="header-nav__list">
+                    <li class="header-nav__list-item"><a href="#">Бизнес</a></li>
+                    <li class="header-nav__list-item"><a href="#content">О нас</a></li>
+                    <li class="header-nav__list-item"><a href="#">Цены</a></li>
+                    <li class="header-nav__list-item"><a href="#ordering">Оформить заказ</a></li>
+                </ul>
+            </nav>
+            <div class="header-burger">
+                <span></span>
+            </div>
+        </div>
+    </section>
+    <section class="content" id="content">
+        <h1 class="content-title"><span>Lorem</span><span class="space">ipsum</span> DOLOR SIT <br> ametconsectetur
+            <span>adipiscing</span></h1>
+        <h4 class="content-text">At vero eos et accusamus et iusto odio dignissimos ducimus!</h4>
+        <div class="content-about">
+            <p class="content-about__item">Totam rem aperiam eaque ipsa</p>
+            <p class="content-about__item">Sit voluptatem accusantium doloremque laudantium</p>
+            <p class="content-about__item">Sed ut perspiciatis, unde omnis iste natus error</p>
+        </div>
+        <div class="content-button">
+            <button class="content-button__btn btn">заказать</button>
+            <button class="content-button__btn btn">подробнее</button>
+        </div>
+    </section>
+</div>
+<section class="ordering" id="ordering">
+    <div class="wrapper">
+        <div class="ordering-content">
+            <h2 class="ordering-content__title">Оформление <span class="space">Заказа</span></h2>
+            <p class="ordering-content__text">Перед заполнением формы ознакомьтесь с нашей схемой работы!</p>
+        </div>
+        <div class="ordering-about">
+            <div class="ordering-about__block">
+                <div class="ordering-about__block-icon icon-first">
+                    <img src="img/About/Лупа.svg" alt="Найти">
+                </div>
+                <p>Lorem ipsum dolor sit amet</p>
+            </div>
+            <div class="ordering-about__dot"></div>
+            <div class="ordering-about__block">
+                <div class="ordering-about__block-icon icon">
+                    <img src="img/About/Проценты.svg" alt="Найти">
+                </div>
+                <p>Сohetenutudi piscing elit</p>
+            </div>
+            <div class="ordering-about__dot"></div>
+            <div class="ordering-about__block">
+                <div class="ordering-about__block-icon icon">
+                    <img class="icon" src="img/About/Файл.svg" alt="Найти">
+                </div>
+                <p> Sed do eikiusmojd tempor</p>
+            </div>
+            <div class="ordering-about__dot"></div>
+            <div class="ordering-about__block">
+                <div class="ordering-about__block-icon icon">
+                    <img src="img/About/Письмо.svg" alt="Найти">
+                </div>
+                <p>Esse cillum doore eu fugiat</p>
+            </div>
+            <div class="ordering-about__dot"></div>
+            <div class="ordering-about__block">
+                <div class="ordering-about__block-icon icon-last">
+                    <img src="img/About/Деньги.svg" alt="Найти">
+                </div>
+                <p>Excepteur sint occaecat <br> cupidatat non proident</p>
+            </div>
+        </div>
+        <form method="post" class="ordering-form">
+            <div class="select">
+                <input type="checkbox" name="check" class="select-toggle">
+                <select class="select-elem select-native">
+                    <option value="item" selected="" disabled="">Выберите тип системы</option>
+                    <option value="item1">Sed ut perspiciatis</option>
+                    <option value="item2">Nemo enim ipsam</option>
+                    <option value="item3">Et harum quidem</option>
+                    <option value="item4">Temporibus autem</option>
+                    <option value="item5">Itaque earum rerum</option>
+                </select>
+                <div class="select-elem select-custom">
+                    <div class="select-elem__title">Выберите тип системы</div>
+                    <ul class="select-elem__options">
+                        <li class="select-elem__options-item" data-value="item1">Sed ut perspiciatis</li>
+                        <li class="select-elem__options-item" data-value="item2">Nemo enim ipsam</li>
+                        <li class="select-elem__options-item" data-value="item3">Et harum quidem</li>
+                        <li class="select-elem__options-item" data-value="item4">Temporibus autem</li>
+                        <li class="select-elem__options-item" data-value="item5">Itaque earum rerum</li>
+                        <li class="select-elem__options-item" data-value="item6">Sed ut perspiciatis</li>
+                        <li class="select-elem__options-item" data-value="item7">Nemo enim ipsam</li>
+                        <li class="select-elem__options-item" data-value="item8">Et harum quidem</li>
+                        <li class="select-elem__options-item" data-value="item9">Temporibus autem</li>
+                        <li class="select-elem__options-item" data-value="item5">Itaque earum rerum</li>
+                        <li class="select-elem__options-item" data-value="item6">Sed ut perspiciatis</li>
+                        <li class="select-elem__options-item" data-value="item7">Nemo enim ipsam</li>
+                        <li class="select-elem__options-item" data-value="item8">Et harum quidem</li>
+                        <li class="select-elem__options-item" data-value="item9">Temporibus autem</li>
+                    </ul>
+                </div>
+            </div>
+            <input type="email" name="email" placeholder="Ваш e-mail" class="ordering-form__input">
+            <input type="text" name="user-name" placeholder="Ваше имя" class="ordering-form__input">
+        </form>
+        <div class="ordering-block">
+            <div class="ordering-percent">
+                <div class="ordering-percent__text">
+                    <p>Sed ut perspiciatis, unde omnis iste natus</p>
+                    <p>75 %</p>
+                </div>
+                <div class="ordering-percent__line">
+                    <div class="ordering-percent__line-mark"></div>
+                </div>
+            </div>
+            <div class="ordering-check">
+                <input name="file" type="file" id="input__file" class="input ordering-check__file" multiple>
+                <label for="input__file" class="ordering-check__button">
+                <span class="ordering-check__button-span">
+                    <img src="img/file.svg" alt="Прикрепить файл">
+                </span>
+                    <span class="ordering-check__button-text">Прикрепите файл</span>
+                </label>
+            </div>
+        </div>
+        <button type="submit" class="ordering-btn btn">Отправить</button>
+    </div>
+</section>
+<footer class="footer">
+    <div class="wrapper">
+        <div class="footer-copyright">
+            <p class="footer-copyright__text"> © 2018 «LOREMINPUT.NET» Все права защищены.</p>
+        </div>
+        <div class="footer-payment">
+            <div class="footer-payment__money">
+                <div><img src="img/kiwi.svg" alt="Qiwi wallet"></div>
+                <p>QIWI wallet</p>
+            </div>
+            <div class="footer-payment__money">
+                <div><img src="img/yandex.svg" alt="Yandex money"></div>
+                <p>Yandex Money</p>
+            </div>
+            <div class="footer-payment__money">
+                <div><img src="img/web.svg" alt="Web money"></div>
+                <p>Web Money</p>
+            </div>
+        </div>
+        <div class="footer-contact">
+            <a class="footer-contact__link" href="https://mail.ru/">
+                <img class="footer-contact__link-img" src="img/mail.svg" alt="Mail">
+                info@ipsum228.com
+            </a>
+            <a class="footer-contact__link" href="https://m.vk.com/">
+                <img class="footer-contact__link-img" src="img/Vk.svg" alt="Vk">
+                Мы вконтакте
+            </a>
+        </div>
+    </div>
+</footer>
+
+<script type="module" src="js/main.js"></script>
+
+</body>
+</html>

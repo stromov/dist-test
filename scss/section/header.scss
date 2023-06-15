@@ -1,0 +1,112 @@
+@import "../variables.scss";
+@import "../mixin.scss";
+@import "../fonts.scss";
+
+.header {
+  background: $headerBg;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 5;
+
+  .wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+  }
+
+  &-logo {
+    font-family: 'Raleway', sans-serif;
+    font-style: normal;
+    font-weight: 800;
+    font-size: $h3;
+    line-height: $lh3;
+    color: $white;
+    padding: 33.5px 0;
+    @media (max-width: 820px) {
+      font-size: $h3-820;
+      line-height: $lh3-820;
+    }
+  }
+
+  &-nav__list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    gap: 60px;
+    @media (max-width: 768px) {
+      display: none;
+    }
+  }
+
+  & a {
+    font-weight: 700;
+    font-size: $p5;
+    line-height: $lh7;
+    color: $white;
+    text-decoration: none;
+    text-transform: uppercase;
+    cursor: pointer;
+  }
+
+  & a:hover {
+    color: $blue;
+  }
+
+  & a:active {
+    color: $blue;
+    border-bottom: 3px solid $blue;
+    padding-bottom: 10px;
+    text-align: center;
+    -webkit-transition: 0.5s;
+    -o-transition: 0.5s;
+    transition: 0.5s;
+  }
+
+  & li {
+    list-style-type: none;
+    padding: 43px 0 39px;
+  }
+
+  &-burger {
+    display: none;
+    @media (max-width: 768px) {
+      & {
+        margin: 39px 15px 0 0;
+        position: relative;
+        width: 24px;
+        height: 18px;
+        display: block;
+        cursor: pointer;
+        @media (max-width: 460px) {
+          margin: 33.5px 15px 0 0;
+        }
+
+        & span {
+          top: 16px;
+        }
+
+        &:before {
+          top: 8px;
+        }
+
+        &:after, &:before {
+          content: '';
+        }
+
+        &:after, &:before, & span {
+          height: 3px;
+          width: 100%;
+          position: absolute;
+          background: $white;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,48 @@
+
+//---------------Переменные по title и text
+
+// Заголовки font-size
+//              820             460
+$h1: 48px;   $h1-820: 38px;   $h1-460: 28px;
+$h2: 36px;   $h2-820: 24px;   $h2-460: 22px;
+$h3: 28px;   $h3-820: 24px;   $h3-460: 18px;
+$h4: 20px;   $h4-820: 16px;   $h4-460: 14px;
+
+// Текст font-size
+//              820             460
+$p1:20px;   $p1-820:18px;   $p1-460:16px;
+$p2:18px;   $p2-820:16px;   $p2-460:12px;
+$p3:16px;   $p3-820:14px;   $p3-460:10px;
+$p4:15px;   $p4-820:13px;   $p4-460:19px;
+$p5:13px;   $p5-820:10px;   $p5-460:8px;
+
+// Межсторочный интервал line-height
+//              820             460
+$lh1:58px;  $lh1-820:56px;  $lh1-460:42px;
+$lh2:43px;  $lh2-820:40px;  $lh2-460:38px;
+$lh3:33px;  $lh3-820:30px;  $lh3-460:24px;
+$lh4:24px;  $lh4-820:22px;  $lh4-460:10px;
+$lh5:22px;  $lh5-820:20px;  $lh5-460:18px;
+$lh6:18px;  $lh6-820:16px;  $lh6-460:14px;
+$lh7:16px;  $lh7-820:14px;  $lh7-460:12px;
+
+
+// ЦВЕТА
+
+//header
+$headerBg: rgba(16, 16, 29, 0.9);
+
+//футер
+$footerBg: #3D4050;
+
+//текст
+$white: #ffffff;
+$blue: #43ABF0;
+$steelblue: #286690;
+$black: #000000;
+$darkgrey: #2A2B30;
+$grey: #BBBBBB;
+$darkblue: #272733;
+$lightgrey: #C3C3C3;
+$borderBtn: #6F6D7B;
+$slategrey: #3D4050;

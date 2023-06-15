@@ -1,0 +1,23 @@
+@import "variables.scss";
+
+@mixin wrapper  {
+  max-width: 1200px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+@mixin btn {
+  text-transform: uppercase;
+  font-family: 'Lato', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: $p5;
+  line-height: $lh7;
+  border-radius: 4px;
+  transition: 0.5s;
+  cursor: pointer;
+
+  &:hover {
+    translate: 0 5px;
+  }
+}

@@ -1,0 +1,126 @@
+@import "../mixin.scss";
+@import "../variables.scss";
+@import "../fonts.scss";
+
+.footer {
+  background: $footerBg;
+  padding: 30px 0;
+  @media (max-width: 1140px) {
+    padding: 20px 0;
+  }
+
+  .wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    @media (max-width: 1140px) {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+      flex-direction: column;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      justify-content: center;
+      gap: 10px;
+      text-align: center;
+    }
+  }
+
+  &-copyright {
+    border-right: 1px solid $lightgrey;
+    padding-right: 38px;
+    color: $white;
+    font-weight: 600;
+    font-size: $p5;
+    line-height: $lh7;
+    @media (max-width: 1140px) {
+      border-right: none;
+      padding: 0 0 15px;
+      border-bottom: 1px solid $lightgrey;
+    }
+  }
+
+  &-payment {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    font-weight: 400;
+    font-size: $p5;
+    line-height: $lh7;
+    color: $lightgrey;
+    gap: 40px;
+    @media (max-width: 460px) {
+      gap: 20px;
+    }
+
+    &__money {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+      justify-content: space-between;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center;
+
+      & div {
+        padding-right: 10px;
+      }
+    }
+  }
+
+  &-contact {
+    border-left: 1px solid $lightgrey;
+    padding-left: 37px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    gap: 49px;
+    @media (max-width: 460px) {
+      gap: 20px;
+    }
+    @media (max-width: 1140px) {
+      border-left: none;
+      padding: 15px 0 0;
+      border-top: 1px solid $lightgrey;
+    }
+
+    &__link {
+      color: $white;
+      cursor: pointer;
+      text-decoration: none;
+      font-weight: 600;
+      font-size: $p5;
+      line-height: $lh7;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center;
+
+      &-img {
+        padding-right: 13px;
+      }
+    }
+  }
+}

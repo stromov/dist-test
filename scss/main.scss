@@ -1,0 +1,41 @@
+@import "section/header.scss";
+@import "section/content.scss";
+@import "section/ordering.scss";
+@import "section/footer.scss";
+
+@import "fonts.scss";
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+
+
+}
+html {
+  scroll-behavior: smooth;
+  font-family: 'Lato', sans-serif;
+  font-style: normal;
+}
+
+.wrapper, .content {
+  @include wrapper;
+}
+
+.btn {
+  @include btn;
+}
+
+.banner {
+  background: url("../img/banner.svg") no-repeat center/cover;
+  position: relative;
+}
+.ordering {
+  background-image: url("../img/map.svg") no-repeat center/cover $headerBg;
+  position: relative;
+}
+span {
+  color: $blue;
+}
