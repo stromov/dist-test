@@ -6,13 +6,15 @@
   "scripts": {
     "start": "parcel",
     "build": "parcel build  --public-url ./",
+    "prebuild": "shx rm -rf dist/*",
     "push-gh-pages": "push-dir --dir=dist --branch=gh-pages --cleanup --verbose"
   },
   "author": "",
   "license": "ISC",
   "devDependencies": {
     "@parcel/transformer-sass": "^2.5.0",
-    "parcel": "^2.5.0"
+    "parcel": "^2.5.0",
+    "shx": "^0.3.4"
   },
   "dependencies": {
     "browserslist": "^4.21.5"
