@@ -6,7 +6,7 @@
 .pnp.js
 /.idea/
 /.parcel-cache
-/.dist
+/dist
 
 
 # testing
